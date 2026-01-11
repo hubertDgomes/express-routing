@@ -3,7 +3,7 @@ const emailValidation = require("../helpers/emailValidation");
 
 
 
-function authController(req, res) {
+function    authController(req, res) {
     const { name, email, password } = req.body
 
     if (!emailValidation(email)) {
